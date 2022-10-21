@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2899457421255979387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4066253844050748909}
+  m_Layer: 0
+  m_Name: AimAtPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4066253844050748909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2899457421255979387}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8066895472395334639}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3010737347932465220
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +130,8 @@ GameObject:
   - component: {fileID: -6044064006680328354}
   - component: {fileID: 6924164176402568634}
   - component: {fileID: 6047866503981962965}
+  - component: {fileID: 7276965945608021806}
+  - component: {fileID: 4376255529594069286}
   m_Layer: 0
   m_Name: Unit
   m_TagString: Untagged
@@ -120,6 +153,7 @@ Transform:
   m_Children:
   - {fileID: 7528303116247178812}
   - {fileID: 6462877959251598635}
+  - {fileID: 4066253844050748909}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -214,6 +248,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   agent: {fileID: -1627122056224088822}
+  targeter: {fileID: 4376255529594069286}
 --- !u!114 &6924164176402568634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +264,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   unitMovement: {fileID: -6044064006680328354}
+  targeter: {fileID: 4376255529594069286}
   onSelected:
     m_PersistentCalls:
       m_Calls:
@@ -272,6 +308,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.8332, y: 2.2993, z: 2.7371}
   m_Center: {x: -0.02, y: 1.1006, z: 0.1424}
+--- !u!114 &7276965945608021806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8066895472395334632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d139d57300a44c0a35be32e0b7c032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  aimAtPoint: {fileID: 4066253844050748909}
+--- !u!114 &4376255529594069286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8066895472395334632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c695d39bf8e53445b8cec7ef399fd8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  target: {fileID: 0}
 --- !u!1001 &8066895473259870679
 PrefabInstance:
   m_ObjectHideFlags: 0
