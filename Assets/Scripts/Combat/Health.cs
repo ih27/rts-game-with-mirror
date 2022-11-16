@@ -14,8 +14,8 @@ public class Health : NetworkBehaviour
     private int currentHealth;
 
     public event Action ServerOnDie;
-
     public event Action<int, int> ClientOnHealthUpdated;
+
     #endregion
 
     #region Server
@@ -36,8 +36,6 @@ public class Health : NetworkBehaviour
 
         // dead
         ServerOnDie?.Invoke();
-
-        Debug.Log("We died!");
     }
 
     #endregion
