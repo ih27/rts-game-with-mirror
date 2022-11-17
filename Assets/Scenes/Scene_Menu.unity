@@ -183,13 +183,21 @@ PrefabInstance:
       value: Assets/Scenes/Scene_Menu.unity
       objectReference: {fileID: 0}
     - target: {fileID: 3589144180161817990, guid: dc0ffd5501b3e416da70632f1aa41351, type: 3}
+      propertyPath: gameOverHandlerPrefab
+      value: 
+      objectReference: {fileID: 4875954603450161622, guid: c4e25f6524c1f4663bff09747f9212ed, type: 3}
+    - target: {fileID: 3589144180161817990, guid: dc0ffd5501b3e416da70632f1aa41351, type: 3}
       propertyPath: spawnPrefabs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3589144180161817990, guid: dc0ffd5501b3e416da70632f1aa41351, type: 3}
       propertyPath: spawnPrefabs.Array.data[2]
       value: 
       objectReference: {fileID: 1726064631450067345, guid: 5ef1a0da1f33e476185cc112a07b0e41, type: 3}
+    - target: {fileID: 3589144180161817990, guid: dc0ffd5501b3e416da70632f1aa41351, type: 3}
+      propertyPath: spawnPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 5058211689068876767, guid: c4e25f6524c1f4663bff09747f9212ed, type: 3}
     - target: {fileID: 3589144180161818044, guid: dc0ffd5501b3e416da70632f1aa41351, type: 3}
       propertyPath: m_Name
       value: NetworkManager
